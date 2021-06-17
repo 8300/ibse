@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<p style="white-space:pre-wrap">
+# 使用手册
+
+## 设置点表
+使用sqlitestudio程序将数据库点表完善.
+
+## 将数据库配置转为josn文件配置
+创建配置文件目录：mkdir config
+shell下运行：<程序目录>/sql_to_json <数据库目录>/v0.1.1-box_change.db
+结果：会在当前目录的config目录下生成32.json及6.json
+
+## 运行104程序
+shell下运行：<程序目录>/iec104_clients <配置文件目录>/32.json <配置文件目录>/6.json
+</p>

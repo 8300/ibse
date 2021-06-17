@@ -1,0 +1,5 @@
+#!/bin/sh
+touch /ts/log/robot.log
+#/ts/proc/robot -nop
+#/ts/proc/robot -nop >/ts/log/robot.log
+/ts/proc/robot -nop >/dev/null
