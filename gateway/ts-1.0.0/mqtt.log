@@ -1,0 +1,54 @@
+{
+	"IDENTIFICATION": 1,
+	"M_FLAG": 0,
+	"FRAGMENT_OFFSET": 0,
+	"DATA": {
+		"DEVICE_ID": 136176923508744,
+		"PRODUCTS": [{
+			"PRODUCT_ID": 1,
+			"MFRS_ID": 5,
+			"PARAM_CONTENT": {
+				"IP": null,
+				"PORT": null,
+				"URL": null,
+				"VERIFICATION_MODE": "0",
+				"DATA_BITS": "8",
+				"SERIAL_PORT": "485-1",
+				"BAUD_RATE": "9600",
+				"STOP_BIT": "1"
+			},
+			"INTERFACE_CONFIG": [{
+				"INTERFACE_ID": 1,
+				"SEND_COMMAND": "01 03 03 20 00 0B 05 83",
+				"ACCEPT_COMMAND": null,
+				"POINT_CONFIG": [{
+					"IDENTIFY": 1,
+					"BIT_FLOAT": "1.1 ",
+					"TYPE": "122",
+					"INDEXES": null,
+					"LIMITS": "1.3",
+					"MULTIPLE": "0.01"
+				}]
+			}]
+		}]
+	}
+}
+[{
+	"DEVICE_ID": 136176923508744,
+	"GW_IP": "192.168.1.110",
+	"QOS": 1,
+	"IP": "192.168.1.110",
+	"PWD": "123456",
+	"PORT": "1883",
+	"FLAG_TIME_SYN": "1",
+	"USERNAME": "admin"
+}, {
+	"DEVICE_ID": 1361769508744,
+	"GW_IP": "192.168.1.2",
+	"QOS": 1,
+	"IP": "127.0.0.1",
+	"PWD": "123456",
+	"PORT": "1883",
+	"FLAG_TIME_SYN": "0",
+	"USERNAME": "admin"
+}]
