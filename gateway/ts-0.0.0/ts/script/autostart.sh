@@ -1,16 +1,15 @@
 #!/bin/sh
 
-ps -ef|grep sql_mc|grep -v grep
+ps -ef|grep sql_update|grep -v grep
 if [ $? -eq 0 ];then
 	echo runing
 else 
-	echo sql_mc start runing...
-	/ts/proc/sql_mc &
+	echo sql_update start runing...
+	/ts/proc/sql_update &
 fi
-ps -ef|grep monitor|grep -v grep
+ps -ef|grep sql_select|grep -v grep
 if [ $? -eq 0 ];then
 	echo runing
 else 
-	echo monitor start runing...
-	/ts/proc/monitor &
+	/ts/proc/sql_select &
 fi

@@ -4,13 +4,16 @@ chmod +x /ts/proc/*
 chmod +x /ts/script/*
 chmod +x /ts/proc/script/*
 #adduser mosquitto -p root
-sleep 13
-/ts/proc/sql_to_json
-sh /ts/script/sysset.sh
-#sh /ts/script/net_tmp.sh
-sleep 5
 /ts/proc/mosquitto &
-/ts/proc/sql_mc &
+sleep 3
+sh /ts/script/sysset.sh
+/ts/proc/sql2file
+/ts/proc/webserver &
+/ts/proc/sql2html
+#sh /ts/script/net_tmp.sh
+sleep 1
+/ts/proc/sql_select &
+/ts/proc/sql_update &
 sleep 1 
 /ts/proc/monitor &
 cp -R /ts/script/spool /var
