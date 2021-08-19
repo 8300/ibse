@@ -3,49 +3,95 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<!--
-	<link rel="stylesheet" href="https://8300.github.io/html/css/main.css" type="text/css" />
-	-->
-	<link rel="stylesheet" href="../html/css/main.css" type="text/css" />
 	<title>8300社区</title>
+	<script>
+		function load() {
+			var menu = document.getElementById("menu");
+			if(self!=top){
+				menu.style.display='none';
+				console.log("not show");
+			} else {
+				menu.style.display="block";
+				console.log("show");
+			}
+		}
+	</script>
 </head>
 
-<body style="background:black;">
-	<div style="margin:0 2% 2% 1%; position:fixed; height:100%; background:gray;">
-<div id="technology" style="" onclick="document.all.technology_child.style.display=(document.all.technology_child.style.display =='none')?'':'none'" >
-	+ 技术 </div>
-<div id="technology_child"  style="display:''; padding-left:2em;">
-	<a href="https://8300.github.io/technology/mechine/index.html">机械工程</a> <br>
-	<a href="https://8300.github.io/technology/hardware/index.html">电子电路</a> <br>
-	<a href="https://8300.github.io/technology/software/index.html">软件编程</a> <br>
-	<a href="https://8300.github.io/technology/manual/index.html">官方手册</a> <br>
-</div>
-<div id="main2" style="" onclick="document.all.child2.style.display=(document.all.child2.style.display =='none')?'':'none'" >
-	+ 生活 </div>
-<div id="child2"  style="display:''; padding-left:2em;">
-	<a href="https://8300.github.io/life/audio/index.html">音乐</a> <br>
-	<a href="https://8300.github.io/life/video/index.html">视频</a> <br>
-	<a href="https://8300.github.io/life/deal/index.html">买卖</a> <br>
-</div>
-<div id="tool" style="" onclick="document.all.tool_child.style.display=(document.all.tool_child.style.display =='none')?'':'none'" >
-	+ 在线工具 </div>
-<div id="tool_child"  style="display:''; padding-left:2em;">
-	<a href="https://8300.github.io/tool/calculator/index.html">计算器</a><br>
-</div>
-<div>
-	<a href="https://8300.github.io/software/index.html">常用软件</a><br>
-</div>
-<div>
-	<a href="https://8300.github.io/company/index.html">公司主页</a><br>
-</div>
-<div>
-	<a href="https://8300.github.io/personal/index.html">个人主页</a><br>
-</div>
-<div>
-	<a href="https://8300.github.io/about/index.html">关于</a><br>
-</div>
+<body style="background:black;" onload="load()">
+	<div id="menu" style="margin:0 2% 2% 1%; position:fixed; height:100%; background:gray;">
+		<div>
+			<button style="width:100%"><a href="https://8300.github.io/index.html"><h2>8300主页</h2></a></button>
+		</div>
+		<h3>
+		<div id="technology" style="" onclick="document.all.technology_child.style.display=(document.all.technology_child.style.display =='none')?'':'none'" >
+			+ 技术 </div>
+		<div id="technology_child"  style="display:''; padding-left:2em;">
+			<a href="https://8300.github.io/technology/mechine/index.html">机械工程</a> <br>
+			<a href="https://8300.github.io/technology/hardware/index.html">电子电路</a> <br>
+			<a href="https://8300.github.io/technology/software/index.html">软件编程</a> <br>
+			<a href="https://8300.github.io/technology/manual/index.html">官方手册</a> <br>
+		</div>
+		<div id="main2" style="" onclick="document.all.child2.style.display=(document.all.child2.style.display =='none')?'':'none'" >
+			+ 生活 </div>
+		<div id="child2"  style="display:''; padding-left:2em;">
+			<a href="https://8300.github.io/life/audio/index.html">音乐</a> <br>
+			<a href="https://8300.github.io/life/video/index.html">视频</a> <br>
+			<a href="https://8300.github.io/life/deal/index.html">买卖</a> <br>
+		</div>
+		<div id="tool" style="" onclick="document.all.tool_child.style.display=(document.all.tool_child.style.display =='none')?'':'none'" >
+			+ 在线工具 </div>
+		<div id="tool_child"  style="display:''; padding-left:2em;">
+			<a href="https://8300.github.io/tool/calculator/index.html">计算器</a><br>
+		</div>
+		<div>
+			<a href="https://8300.github.io/software/index.html">常用软件</a><br>
+		</div>
+		<div>
+			<a href="https://8300.github.io/ibse/index.html">公司主页</a><br>
+		</div>
+		<div>
+			<a href="https://8300.github.io/personal/index.html">个人主页</a><br>
+		</div>
+		<div>
+			<a href="https://8300.github.io/about/index.html">关于</a><br>
+		</div>
+		</h3>
 	</div>
-	<div style="margin:2% 2% 2% 10%; display:flex;">
-		<iframe src="index.htm" height=1000px width=2000px />
-	</div>
+<div style="margin:2% 2% 2% 12%; color: #009900">
+<a style="color: #009900" href='spool/index.html'>DIR:spool</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<br><a style="color: #009900" href='4g_cmnet'>00.4g_cmnet</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<a style="color: #009900" href='4g_ctnet'>01.4g_ctnet</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<a style="color: #009900" href='watchdog_4g.sh'>02.watchdog_4g.sh</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<a style="color: #009900" href='sysset.sh'>03.sysset.sh</a><div style='float:right'>Sat Aug  7 00:26:59 2021
+</div><br>
+<a style="color: #009900" href='at_u'>04.at_u</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<a style="color: #009900" href='add2.sh'>05.add2.sh</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<a style="color: #009900" href='test.sh'>06.test.sh</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<a style="color: #009900" href='dial-on.sh'>07.dial-on.sh</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<a style="color: #009900" href='ts_dial.sh'>08.ts_dial.sh</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<a style="color: #009900" href='add4.sh'>09.add4.sh</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<a style="color: #009900" href='4g_3gnet'>10.4g_3gnet</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<a style="color: #009900" href='gprs-on.sh'>11.gprs-on.sh</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<a style="color: #009900" href='net_tmp.sh'>12.net_tmp.sh</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<a style="color: #009900" href='autostart.sh'>13.autostart.sh</a><div style='float:right'>Fri Aug  6 23:01:49 2021
+</div><br>
+<a style="color: #009900" href='add3.sh'>14.add3.sh</a><div style='float:right'>Wed Jul 21 18:02:40 2021
+</div><br>
+<a style="color: #009900" href='gprs-off.sh'>15.gprs-off.sh</a><div style='float:right'>Wed Jul 21 18:02:41 2021
+</div><br>
+</div>
 </body>

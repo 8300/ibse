@@ -3,49 +3,119 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<!--
-	<link rel="stylesheet" href="https://8300.github.io/html/css/main.css" type="text/css" />
-	-->
-	<link rel="stylesheet" href="../html/css/main.css" type="text/css" />
 	<title>8300社区</title>
+	<script>
+		function load() {
+			var menu = document.getElementById("menu");
+			if(self!=top){
+				menu.style.display='none';
+				console.log("not show");
+			} else {
+				menu.style.display="block";
+				console.log("show");
+			}
+		}
+	</script>
 </head>
 
-<body style="background:black;">
-	<div style="margin:0 2% 2% 1%; position:fixed; height:100%; background:gray;">
-<div id="technology" style="" onclick="document.all.technology_child.style.display=(document.all.technology_child.style.display =='none')?'':'none'" >
-	+ 技术 </div>
-<div id="technology_child"  style="display:''; padding-left:2em;">
-	<a href="https://8300.github.io/technology/mechine/index.html">机械工程</a> <br>
-	<a href="https://8300.github.io/technology/hardware/index.html">电子电路</a> <br>
-	<a href="https://8300.github.io/technology/software/index.html">软件编程</a> <br>
-	<a href="https://8300.github.io/technology/manual/index.html">官方手册</a> <br>
-</div>
-<div id="main2" style="" onclick="document.all.child2.style.display=(document.all.child2.style.display =='none')?'':'none'" >
-	+ 生活 </div>
-<div id="child2"  style="display:''; padding-left:2em;">
-	<a href="https://8300.github.io/life/audio/index.html">音乐</a> <br>
-	<a href="https://8300.github.io/life/video/index.html">视频</a> <br>
-	<a href="https://8300.github.io/life/deal/index.html">买卖</a> <br>
-</div>
-<div id="tool" style="" onclick="document.all.tool_child.style.display=(document.all.tool_child.style.display =='none')?'':'none'" >
-	+ 在线工具 </div>
-<div id="tool_child"  style="display:''; padding-left:2em;">
-	<a href="https://8300.github.io/tool/calculator/index.html">计算器</a><br>
-</div>
-<div>
-	<a href="https://8300.github.io/software/index.html">常用软件</a><br>
-</div>
-<div>
-	<a href="https://8300.github.io/company/index.html">公司主页</a><br>
-</div>
-<div>
-	<a href="https://8300.github.io/personal/index.html">个人主页</a><br>
-</div>
-<div>
-	<a href="https://8300.github.io/about/index.html">关于</a><br>
-</div>
+<body style="background:black;" onload="load()">
+	<div id="menu" style="margin:0 2% 2% 1%; position:fixed; height:100%; background:gray;">
+		<div>
+			<button style="width:100%"><a href="https://8300.github.io/index.html"><h2>8300主页</h2></a></button>
+		</div>
+		<h3>
+		<div id="technology" style="" onclick="document.all.technology_child.style.display=(document.all.technology_child.style.display =='none')?'':'none'" >
+			+ 技术 </div>
+		<div id="technology_child"  style="display:''; padding-left:2em;">
+			<a href="https://8300.github.io/technology/mechine/index.html">机械工程</a> <br>
+			<a href="https://8300.github.io/technology/hardware/index.html">电子电路</a> <br>
+			<a href="https://8300.github.io/technology/software/index.html">软件编程</a> <br>
+			<a href="https://8300.github.io/technology/manual/index.html">官方手册</a> <br>
+		</div>
+		<div id="main2" style="" onclick="document.all.child2.style.display=(document.all.child2.style.display =='none')?'':'none'" >
+			+ 生活 </div>
+		<div id="child2"  style="display:''; padding-left:2em;">
+			<a href="https://8300.github.io/life/audio/index.html">音乐</a> <br>
+			<a href="https://8300.github.io/life/video/index.html">视频</a> <br>
+			<a href="https://8300.github.io/life/deal/index.html">买卖</a> <br>
+		</div>
+		<div id="tool" style="" onclick="document.all.tool_child.style.display=(document.all.tool_child.style.display =='none')?'':'none'" >
+			+ 在线工具 </div>
+		<div id="tool_child"  style="display:''; padding-left:2em;">
+			<a href="https://8300.github.io/tool/calculator/index.html">计算器</a><br>
+		</div>
+		<div>
+			<a href="https://8300.github.io/software/index.html">常用软件</a><br>
+		</div>
+		<div>
+			<a href="https://8300.github.io/ibse/index.html">公司主页</a><br>
+		</div>
+		<div>
+			<a href="https://8300.github.io/personal/index.html">个人主页</a><br>
+		</div>
+		<div>
+			<a href="https://8300.github.io/about/index.html">关于</a><br>
+		</div>
+		</h3>
 	</div>
-	<div style="margin:2% 2% 2% 10%; display:flex;">
-		<iframe src="index.htm" height=1000px width=2000px />
-	</div>
+<div style="margin:2% 2% 2% 12%; color: #009900">
+<a style="color: #009900" href='hangzhou_xiupu/index.html'>DIR:hangzhou_xiupu</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='N96-多功能电表/index.html'>DIR:N96-多功能电表</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='ABB局放/index.html'>DIR:ABB局放</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='海湾科华/index.html'>DIR:海湾科华</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='常州帕斯菲克/index.html'>DIR:常州帕斯菲克</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='西门子消防气灭协议/index.html'>DIR:西门子消防气灭协议</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='中控门禁一体机/index.html'>DIR:中控门禁一体机</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='陕西公众/index.html'>DIR:陕西公众</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='迈驰拓扑/index.html'>DIR:迈驰拓扑</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='山东金惠/index.html'>DIR:山东金惠</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='科大机器人/index.html'>DIR:科大机器人</a><div style='float:right'>Wed Aug 18 17:35:10 2021
+</div><br>
+<a style="color: #009900" href='迈内/index.html'>DIR:迈内</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='紫外传感器/index.html'>DIR:紫外传感器</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='慧智神光-机械特性/index.html'>DIR:慧智神光-机械特性</a><div style='float:right'>Thu Jul 15 10:42:26 2021
+</div><br>
+<a style="color: #009900" href='建科博瑞环境/index.html'>DIR:建科博瑞环境</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='国安sga/index.html'>DIR:国安sga</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='RAK/index.html'>DIR:RAK</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='深圳奥特迅电池点表/index.html'>DIR:深圳奥特迅电池点表</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='北大青鸟消防安全/index.html'>DIR:北大青鸟消防安全</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='保定嘉城/index.html'>DIR:保定嘉城</a><div style='float:right'>Fri Aug  6 10:25:34 2021
+</div><br>
+<a style="color: #009900" href='广州高力/index.html'>DIR:广州高力</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='华星安防主机/index.html'>DIR:华星安防主机</a><div style='float:right'>Thu Jul 15 10:42:25 2021
+</div><br>
+<a style="color: #009900" href='科大环境主机/index.html'>DIR:科大环境主机</a><div style='float:right'>Thu Jul 15 10:42:24 2021
+</div><br>
+<a style="color: #009900" href='一多测温/index.html'>DIR:一多测温</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='晓星科技/index.html'>DIR:晓星科技</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<a style="color: #009900" href='易艾斯德/index.html'>DIR:易艾斯德</a><div style='float:right'>Thu Jun 17 16:32:58 2021
+</div><br>
+<br><a style="color: #009900" href='潞电101特殊说明.txt'>00.潞电101特殊说明.txt</a><div style='float:right'>Thu Jun 17 16:24:34 2021
+</div><br>
+<a style="color: #009900" href='消息队列定义.doc'>01.消息队列定义.doc</a><div style='float:right'>Thu Jun 17 16:23:25 2021
+</div><br>
+<a style="color: #009900" href='TTU_Ethernet_协议.docx'>02.TTU_Ethernet_协议.docx</a><div style='float:right'>Thu Jun 17 16:23:25 2021
+</div><br>
+</div>
 </body>
