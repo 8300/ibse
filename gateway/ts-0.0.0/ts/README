@@ -1,3 +1,0 @@
-#scp -r ts root@192.168.1.177:/
-#vi /etc/init.d/rcS
-#<add> /ts/install/ts.sh
