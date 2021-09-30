@@ -1,0 +1,3 @@
+ mosquitto_pub -i iii -h 192.168.12.2 -u admin -P 123456 -t "EC_GW/S2C/C1/ClientID" -m "{\"DEVICE_ID\":\"west\"}"
+mosquitto_sub -i oo -h 192.168.12.2 -u admin -P 123456 -t "#" -v
+
