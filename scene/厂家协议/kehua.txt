@@ -1,0 +1,73 @@
+科华电力协议对接意见：
+1.字段名最好用英文，拼音简写看不懂是啥，调试不方便。如设备编号可以用id_device
+2.个人认为数据提供方（科华）应为服务端，因为不一定只有一个设备会要这部分数据。
+3.设备类型建议纯数字，不要数字加字母，如果觉得调试不方便，可以增加类型描述字段
+4.提供底下传感器设备在线情况，提供总召接口。单个设备突变时只上报突变报文即可。
+5.所有报文统一格式方便解析。接地电流和温度可以1拆4，算四个传感器设备。局放监测1拆13
+分布式电缆温度和环境温度：数据格式建议：
+注意多值values_float，单值value_float
+{
+	"id_gallery": "1000",
+	"data": [{
+		"id_device": "1",
+		"type_device": "1324",
+		"acquisition_time": "2019-06-10 12:00:00",
+		"values_float": "12.1,….12.4"
+	}, {
+		"id_device": "2",
+		"type_device": "1325",
+		"acquisition_time": "2019-06-10 12:00:00",
+		"values_float": "12.1,….12.4"
+	}, {
+		"id_device": "3",
+		"type_device": "1324",
+		"acquisition_time": "2019-06-10 12:00:00",
+		"values_float": "12.1,….12.4"
+	}]
+}
+{
+	"id_gallery": "1000",
+	"data": [{
+			"id_device": "1",
+			"type_device": "134",
+			"acquisiton_time": "2019-06-10 12:00:00",
+			"value_float": "60.1"
+		},
+		{
+			"id_device": "2",
+			"type_device": "135",
+			"acquisiton_time": "2019-06-10 12:00:00",
+			"value_float": "34.1"
+		},
+		{
+			"id_device": "3",
+			"type_device": "120",
+			"acquisiton_time": "2019-06-10 12:00:00",
+			"value_float": "20.5"
+		},
+		{
+			"id_device": "4",
+			"type_device": "121",
+			"acquisiton_time": "2019-06-10 12:00:00",
+			"value_float": "0"
+		},
+		{
+			"id_device": "5",
+			"type_device": "122",
+			"acquisiton_time": "2019-06-10 12:00:00",
+			"value_float": "0"
+		},
+		{
+			"id_device": "6",
+			"type_device": "124",
+			"acquisiton_time": "2019-06-10 12:00:00",
+			"value_float": "0"
+		},
+		{
+			"id_device": "7",
+			"type_device": "200",
+			"acquisiton_time": "2019-06-10 12:00:00",
+			"value_float": "0"
+		}
+	]
+}
