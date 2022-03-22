@@ -1,0 +1,6 @@
+HTTP/1.1 200 OK
+Date: Sat, 31 Dec 2005 23:59:59 GMT
+Content-Type: text/html;charset=ISO-8859-1
+Content-Length: 122
+
+<?xml version="1.0" encoding="utf-8"?><EquipRealTimePack count="3"><E0 equip_no="1000" equip_state="0"><yc_group count="2"><YC0 yc_no="1" yc_value="22.57" yc_state="0"/><YC1 yc_no="2" yc_value="30.69" yc_state="0"/></yc_group></E0><E1 equip_no="1001" equip_state="0"><yc_group count="2"><YC0 yc_no="1" yc_value="22.82" yc_state="0"/><YC1 yc_no="2" yc_value="29.21" yc_state="0"/></yc_group></E1><E2 equip_no="1002" equip_state="0"><yc_group count="2"><YC0 yc_no="1" yc_value="22.94" yc_state="0"/><YC1 yc_no="2" yc_value="27.56" yc_state="0"/></yc_group></E2><E4 equip_no="1004" equip_state="0"><yc_group count="2"><YC0 yc_no="1" yc_value="23.33" yc_state="0"/><YC1 yc_no="2" yc_value="27.99" yc_state="0"/></yc_group></E4></EquipRealTimePack>

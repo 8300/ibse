@@ -1,0 +1,4 @@
+/opt/frp_linux/frpc -c /opt/frp_linux/frpc.ini
+
+104公网ip：39.99.206.18
+
